@@ -67,3 +67,7 @@ Install wine-development from jessie-backports on a 32-bit architecture:
       libwine-development/jessie-backports \
       fonts-wine-development/jessie-backports
 %%%%  apt-get install q4wine
+
+
+
+
