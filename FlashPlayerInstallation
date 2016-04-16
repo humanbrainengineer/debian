@@ -1,0 +1,28 @@
+https://wiki.debian.org/FlashPlayer#Installation
+
+End User License Agreement of the Adobe Flash Player
+
+The newest versions of the Debian package flashplugin-nonfree have this warning in the package description:
+
+
+WARNING: Installing this Debian package causes the
+Adobe Flash Player to be downloaded from www.adobe.com.
+The End User License Agreement of the Adobe Flash Player
+is available at www.adobe.com.
+Installation
+
+Ensure your /etc/apt/sources.list file includes the contrib section ( for more information see sources.list )
+Install flashplugin-nonfree (from section contrib):
+
+# apt-get install flashplugin-nonfree
+Update
+
+How to update the Adobe Flash Player:
+
+# update-flashplugin-nonfree --install
+Uninstall
+
+How to Uninstall the Adobe Flash Player, and the flashplugin-nonfree package:
+
+# update-flashplugin-nonfree --uninstall
+# apt-get remove flashplugin-nonfree
