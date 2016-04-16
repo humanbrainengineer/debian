@@ -33,7 +33,7 @@ Preparations:
 
 If you are on a 64-bit architecture (which is the case for most users), you need to enable multiarch:
 
-# dpkg --add-architecture i386 && apt update
+%%%% # dpkg --add-architecture i386 && apt update
 If you are on Debian Jessie (stable) and want to use the current version of wine-development from backports you have to enable jessie-backports on your system. Add this line to your sources.list (or add a new file with the ".list" extension to /etc/apt/sources.list.d/):
 
 deb http://httpredir.debian.org/debian jessie-backports main
@@ -44,7 +44,7 @@ Installation:
 
 Install wine:
 
-# apt install wine
+%%%  # apt install wine
 and/or wine-development:
 
 # apt install wine-development
@@ -66,3 +66,4 @@ Install wine-development from jessie-backports on a 32-bit architecture:
       wine32-development/jessie-backports \
       libwine-development/jessie-backports \
       fonts-wine-development/jessie-backports
+%%%%  apt-get install q4wine
