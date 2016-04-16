@@ -1,0 +1,6 @@
+#!/bin/bash
+export XMODIFIERS="@im=fcitx"
+export QT_IM_MODULE="fcitx"
+gOpt=
+#gOptExt=-multiply
+gTemplateExt=("wpt" "dot" "dotx")
