@@ -1,0 +1,68 @@
+### https://wiki.debian.org/Wine#Debian_Jessie_and_newer ####
+
+
+Contents
+Available versions
+Installation
+Debian Jessie and newer
+Debian Wheezy and older
+Configuration
+Installing and removing programs
+Winetricks
+Additional programs for Wine
+Alternatives
+Links
+Available versions
+
+Since Debian Jessie you can choose between two sets of Wine packages: wine and wine-development.
+
+wine tracks the stable releases from winehq.org (e.g. version 1.6.2), and wine-development the development releases (e.g. version 1.7.29). For Debian Jessie current versions of wine-development are available as backports.
+
+Despite its name wine-development is also intended to be used by regular users. Do not mix this up with the *-dev packages which contain the header files and development libraries.
+
+You can either install both sets at the same time, or only one of them.
+
+
+To use wine-development you have to add the suffix "-development" to every command (e.g. "wine-development foo.exe" or "winecfg-development").
+
+Installation
+
+
+Debian Jessie and newer
+Preparations:
+
+If you are on a 64-bit architecture (which is the case for most users), you need to enable multiarch:
+
+# dpkg --add-architecture i386 && apt update
+If you are on Debian Jessie (stable) and want to use the current version of wine-development from backports you have to enable jessie-backports on your system. Add this line to your sources.list (or add a new file with the ".list" extension to /etc/apt/sources.list.d/):
+
+deb http://httpredir.debian.org/debian jessie-backports main
+and run
+
+# apt update
+Installation:
+
+Install wine:
+
+# apt install wine
+and/or wine-development:
+
+# apt install wine-development
+Packages from backports are not installed automatically. But once they are installed on your system you receive automatic updates. The following examples make sure that all required packages are pulled from jessie-backports instead of jessie.
+
+Install wine-development from jessie-backports on a 64-bit architecture (with i386 as foreign 32-bit architecture):
+
+# apt install \
+      wine-development/jessie-backports \
+      wine32-development/jessie-backports \
+      wine64-development/jessie-backports \
+      libwine-development/jessie-backports \
+      libwine-development:i386/jessie-backports \
+      fonts-wine-development/jessie-backports
+Install wine-development from jessie-backports on a 32-bit architecture:
+
+# apt install \
+      wine-development/jessie-backports \
+      wine32-development/jessie-backports \
+      libwine-development/jessie-backports \
+      fonts-wine-development/jessie-backports
