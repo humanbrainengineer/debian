@@ -68,6 +68,15 @@ Install wine-development from jessie-backports on a 32-bit architecture:
       fonts-wine-development/jessie-backports
 %%%%  apt-get install q4wine
 
+-------------------------------------------------------------------------------
+Font:
 
+wine font :
+
+Download the simsun of font :  https://drive.google.com/drive/my-drive    (apacheindex@gmail.com)
+
+1. simsun.ttc CP to ～/.wine/drive_c/windows/fonts    (Just this step is ok! )
+
+2.terminal input regedit，进入[HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\FontSubstitutes]，设置缺省值为字体名字（如simsun）
 
 
