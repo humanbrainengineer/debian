@@ -11,3 +11,16 @@ Makefile:75: *** Error: unable to find the sources of yourcurrent Linux kernel. 
 To instal linux header:
 
 sudo apt-get install linux-headers-`uname -r`
+
+
+-----------------------------------------------------------------
+
+01:# useradd –d /usr/sam -m ucb
+     passwd ucb
+     userdel olduser
+
+02：modify Debian host name
+
+/etc/hosts
+and
+/etc/hostname
