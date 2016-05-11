@@ -16,6 +16,7 @@ sudo apt-get install linux-headers-`uname -r`
 copy the vdi file in the virtualbox panel to solve the problem.
 
 -----------------------------------------------------------------
+http://www.php-note.com/article/detail/831
 
 01:# useradd –d /usr/sam -m ucb
      passwd ucb
