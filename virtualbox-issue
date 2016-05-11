@@ -11,7 +11,9 @@ Makefile:75: *** Error: unable to find the sources of yourcurrent Linux kernel. 
 To instal linux header:
 
 sudo apt-get install linux-headers-`uname -r`
-
+-----------------------------------------------------------------
+!!!
+copy the vdi file in the virtualbox panel to solve the problem.
 
 -----------------------------------------------------------------
 
