@@ -1,0 +1,13 @@
+VirtualBox Guest Additions：
+
+Recompiling VirtualBox kernel module [FAILED]
+(Look at /var/log/vbox-install.log to find out what went wrong)"
+
+log：
+
+Makefile:75: *** Error: unable to find the sources of yourcurrent Linux kernel. Specify KERN_DIR= and run Make again.
+
+ 
+To instal linux header:
+
+sudo apt-get install linux-headers-`uname -r`
