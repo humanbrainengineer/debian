@@ -7,7 +7,8 @@ log：
 
 Makefile:75: *** Error: unable to find the sources of yourcurrent Linux kernel. Specify KERN_DIR= and run Make again.
 
-1.  apt-get install dkms
+1.  apt-get install dkms    (VMware is just use this command!)
+
 To instal linux header:  
 
 2.  apt-get install linux-headers-`uname -r`
