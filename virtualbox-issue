@@ -9,7 +9,7 @@ Makefile:75: *** Error: unable to find the sources of yourcurrent Linux kernel. 
 
 1.  apt-get install dkms    (VMware is just use this command!)
 
-To instal linux header:  
+To instal linux header:   (virtualbox is just use this command!)
 
 2.  apt-get install linux-headers-`uname -r`
 -----------------------------------------------------------------
