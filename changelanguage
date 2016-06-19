@@ -1,0 +1,8 @@
+http://www.2cto.com/os/201308/235101.html
+
+apt-get install locales
+to configure the locales：
+dpkg-reconfigure locales
+
+--------------------
+choose “zh_CN.UTF-8”
