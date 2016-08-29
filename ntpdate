@@ -1,0 +1,4 @@
+apt-get install ntpdate
+or
+
+date -s "2016-08-29 12:58:00"
