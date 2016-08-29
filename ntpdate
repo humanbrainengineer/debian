@@ -2,3 +2,34 @@ apt-get install ntpdate
 or
 
 date -s "2016-08-29 12:58:00"
+
+
+
+---------------------------------------------------------------------------
+Look：       https://www.server-world.info/en/note?os=Debian_8&p=ntp
+
+
+Configure NTP Server2015/05/01
+ 	Configure NTP server for time adjustment. NTP uses 123/UDP.
+root@dlp:~# aptitude -y install ntp
+root@dlp:~# vi /etc/ntp.conf
+# line 21: comment out
+# server 0.debian.pool.ntp.org iburst
+# server 1.debian.pool.ntp.org iburst
+# server 2.debian.pool.ntp.org iburst
+# server 3.debian.pool.ntp.org iburst
+# change servers for synchronization
+server ntp1.jst.mfeed.ad.jp
+server ntp2.jst.mfeed.ad.jp
+server ntp3.jst.mfeed.ad.jp
+# line 48: add the network range you allow to receive requests
+restrict 10.0.0.0 mask 255.255.255.0 nomodify notrap 
+root@dlp:~# systemctl restart ntp 
+root@dlp:~# systemctl enable ntp 
+# show status
+root@dlp:~# ntpq -p 
+     remote           refid      st t when poll reach   delay   offset  jitter
+==============================================================================
+ ntp1.jst.mfeed. 172.29.1.50      2 u    2   64    1   20.084  -21.584   0.000
+ ntp2.jst.mfeed. 172.29.3.50      2 u    1   64    1   20.614  -22.352   0.000
+ ntp3.jst.mfeed. 172.29.3.100     2 u    -   64    1   22.385  -22.162   0.000
