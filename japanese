@@ -1,4 +1,15 @@
 
+
+
+http://ameblo.jp/keyxero/entry-11460148703.html  # DebianにMozcを入れる方法
+
+# 4 steps commands:
+apt-get install mozc-utils-gui
+apt-get install mozc-server
+apt-get install ibus-mozc
+apt-get install uim-mozc
+
+
 Command !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!6 step.
 
 apt-get install ibus-mozc
