@@ -10,13 +10,7 @@ apt-get install ibus-mozc
 apt-get install uim-mozc
 
 
-Command !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!6 step.
-
-apt-get install ibus-mozc
-apt-get install fcitx-mozc
-exit
-apt-get install zenity
-im-config                  # click the OK buttom until finish.
+-----------------------
 
 ××　　http://qiita.com/rltm/items/26edb6fedbe4a077ce09
 
@@ -48,3 +42,16 @@ Mozcの設定は「Mozcの設定」というアプリで設定できます。
 ちなみに私は以下のような設定にしています。
 「一般」タブで「スペースの入力」を「半角」に変更
 「一般」タブで「キー設定の選択」を「ATOK」に変更
+
+
+-----------------
+
+Command !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!6 step.
+
+apt-get install ibus-mozc
+apt-get install fcitx-mozc
+exit
+apt-get install zenity
+im-config                  # click the OK buttom until finish.
+
+
