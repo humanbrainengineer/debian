@@ -1,0 +1,39 @@
+
+Command !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!6 step.
+
+apt-get install ibus-mozc
+apt-get install fcitx-mozc
+exit
+apt-get install zenity
+im-config                  # click the OK buttom until finish.
+
+××　　http://qiita.com/rltm/items/26edb6fedbe4a077ce09
+
+DebianでGNOMEを導入するとデフォルトの日本語入力ソフトウェアはibus-mozcという地獄です。
+さっさとfcitxに変更してしまいましょう。
+fcitx-mozcパッケージの導入
+まずはパッケージをrootで導入します。
+# aptitude install fcitx-mozc
+im-configでの設定
+次にfcitx-mozcを使いたいユーザでログインしてim-configを実行します。
+$ im-config
+「OK」を選択
+「はい」を選択
+「fcitx」を選択
+「OK」を選択
+「OK」を選択
+設定し終えたら再ログインするとfcitxが有効になります。
+fcitxの設定
+fcitxの設定は「Fcitx設定」というアプリを使用することで設定できます。
+ちなみに私は以下のような設定にしています。
+「外観」の「フォントサイズ」を「10」に変更
+「外観」の「フォント」を好きなフォントに変更
+「外観」の「メニューのフォント」を好きなフォントに変更
+「外観」の「状態パネルを隠すモード」を「表示」
+「外観」の「候補ウインドウを縦にする」を「有効」
+Mozcの設定
+fcitxには日本語入力時のキーボード設定が無いのでMozcの設定画面で選びます。
+Mozcの設定は「Mozcの設定」というアプリで設定できます。
+ちなみに私は以下のような設定にしています。
+「一般」タブで「スペースの入力」を「半角」に変更
+「一般」タブで「キー設定の選択」を「ATOK」に変更
