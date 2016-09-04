@@ -1,2 +1,11 @@
 apt-get install p7zip
 use (engrampa archive manager) to open.
+
+-------------------------------------------------------
+
+wget http://www.rarlab.com/rar/rarlinux-x64-5.4.0.tar.gz
+
+解压到/usr/local
+
+即可。
+再用其他的解压工具打开rar文件即可。
