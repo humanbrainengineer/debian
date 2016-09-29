@@ -1,0 +1,55 @@
+https://artheodoc.wordpress.com/2016/08/07/installation-de-teamviewer-11-sous-debian-8-5-jessie-64-bits/
+-------------------------------------------------------------------------
+Installation de TeamViewer 11 sous Debian 8.5 (jessie) 64 bits.
+Publié le 7 août 2016
+Pour connaître votre version de Debian depuis un terminal :
+
+lsb_release -idrc
+Depuis le site :
+
+http://www.teamviewer.com/fr/download/linux.aspx
+
+Dans la rubrique Ubuntu, Debian clique sur [Télécharger TeamViewer]
+
+Cliquez sur [Enregistrer le fichier]
+
+Dans la dossier Téléchargements j’ai le fichier teamviewer_11.0.57095_i386.deb
+
+Pour activer Multi-Arch (pour un OS 64 bits), si cela n’a pas déjà été fait, depuis le terminal administrateur :
+
+dpkg --add-architecture i386
+apt-get update
+Sur votre machine sous Debian, dans un terminal administrateur, depuis le répertoire où se trouve le paquet (Téléchargements) :
+
+dpkg -i teamviewer_11.0.57095_i386.deb
+Pour résoudre le problèmes de dépendances manquantes (non gérées par dpkg) :
+
+apt-get -f install
+
+
+------------------------------------------------
+
+https://artheodoc.wordpress.com/2016/08/08/installation-de-teamviewer-11-sous-ubuntu-16-04-lts-64-bits/
+
+
+
+Installation de TeamViewer 11 sous Ubuntu 16.04 LTS 64 bits.
+Publié le 8 août 2016
+Interface graphique installée Unity.
+
+Depuis la page WEB suivante :
+
+http://www.teamviewer.com/fr/download/linux.aspx
+
+Dans la rubrique Ubuntu, Debian cliquez sur [Télécharger TeamViewer].
+
+Cliquez sur [Enregistrer le fichier].
+
+Dans le dossier Téléchargements j’ai le fichier teamviewer_11.0.57095_i386.deb.
+
+Depuis le dossier Téléchargements dans un terminal :
+
+sudo dpkg -i teamviewer_11.0.57095_i386.deb
+Pour régler les problèmes de dépendances :
+
+sudo apt-get -f install
