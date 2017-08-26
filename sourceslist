@@ -2,15 +2,15 @@ http://mirrors.163.com/.help/debian.html
 
 
 >> /etc/apt/sources.list
-----------------------
-deb http://mirrors.163.com/debian/ jessie main non-free contrib
-deb http://mirrors.163.com/debian/ jessie-updates main non-free contrib
-deb http://mirrors.163.com/debian/ jessie-backports main non-free contrib
-deb-src http://mirrors.163.com/debian/ jessie main non-free contrib
-deb-src http://mirrors.163.com/debian/ jessie-updates main non-free contrib
-deb-src http://mirrors.163.com/debian/ jessie-backports main non-free contrib
-deb http://mirrors.163.com/debian-security/ jessie/updates main non-free contrib
-deb-src http://mirrors.163.com/debian-security/ jessie/updates main non-free contrib
+----------------------  for debian 9.1 as following:
+deb http://mirrors.163.com/debian/ stretch main non-free contrib 
+deb http://mirrors.163.com/debian/ stretch-updates main non-free contrib 
+deb http://mirrors.163.com/debian/ stretch-backports main non-free contrib 
+deb-src http://mirrors.163.com/debian/ stretch main non-free contrib 
+deb-src http://mirrors.163.com/debian/ stretch-updates main non-free contrib 
+deb-src http://mirrors.163.com/debian/ stretch-backports main non-free contrib 
+deb http://mirrors.163.com/debian-security/ stretch/updates main non-free contrib 
+deb-src http://mirrors.163.com/debian-security/ stretch/updates main non-free contrib
 ----------------------
 
 install netselect-apt.
