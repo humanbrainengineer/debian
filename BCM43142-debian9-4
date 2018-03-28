@@ -1,0 +1,7 @@
+针对 debian stretch 9.4版本
+
+1-  https://wiki.debian.org/bcm43xx
+
+2-  https://wiki.debian.org/wl
+
+PS： 从第一个安装到第二个。下一次可以从第二个直接安装。   PS第二个安装后成功了
