@@ -1,16 +1,12 @@
 http://mirrors.163.com/.help/debian.html
 
 
->> /etc/apt/sources.list
-----------------------  for debian 9.1 as following:
-deb http://mirrors.163.com/debian/ stretch main non-free contrib 
-deb http://mirrors.163.com/debian/ stretch-updates main non-free contrib 
-deb http://mirrors.163.com/debian/ stretch-backports main non-free contrib 
-deb-src http://mirrors.163.com/debian/ stretch main non-free contrib 
-deb-src http://mirrors.163.com/debian/ stretch-updates main non-free contrib 
-deb-src http://mirrors.163.com/debian/ stretch-backports main non-free contrib 
-deb http://mirrors.163.com/debian-security/ stretch/updates main non-free contrib 
-deb-src http://mirrors.163.com/debian-security/ stretch/updates main non-free contrib
+
+
+# /etc/apt/sources.list :  for debian 9.5 as following:
+deb http://ftp2.jp.debian.org/debian/ stretch main contrib non-free
+deb-src http://ftp2.jp.debian.org/debian/ stretch main contrib non-free
+
 ----------------------
 
 install netselect-apt.
